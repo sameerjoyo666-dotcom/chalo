@@ -1,0 +1,199 @@
+.header-wrapper {
+  position: fixed;
+  top: 0.8rem;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  pointer-events: none;
+  animation: slideDown 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-150%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.header {
+  pointer-events: auto;
+  background-color: var(--bg-white);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  height: 64px;
+  /* Sleeker Pill Size */
+  width: 80%;
+  max-width: 1000px;
+  border-radius: 999px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem 0 1.5rem;
+  position: relative;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container .logo {
+  height: 40px;
+  /* More aesthetic proportion */
+  object-fit: contain;
+}
+
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: var(--text-dark);
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--primary);
+}
+
+.dropdown-container {
+  position: relative;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 60px;
+  left: -20px;
+  background: white;
+  min-width: 180px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-item {
+  padding: 0.75rem 1.5rem;
+  color: var(--text-dark);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.dropdown-item:hover {
+  background-color: var(--bg-cream);
+  color: var(--primary);
+}
+
+.header-actions {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+/* Specific pill style buttons for the header */
+.btn-outline {
+  background: transparent;
+  color: var(--text-dark);
+  border: 1px solid #e5e7eb;
+  padding: 0.6rem 1.25rem;
+  border-radius: 999px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  transform: translateY(-2px);
+}
+
+.btn-pill {
+  border-radius: 999px;
+  padding: 0.6rem 1.25rem;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 15px rgba(231, 126, 34, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-pill:hover {
+  box-shadow: 0 8px 20px rgba(231, 126, 34, 0.4);
+  transform: translateY(-2px);
+}
+
+.mobile-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-dark);
+  margin-right: 1.5rem;
+}
+
+.mobile-nav {
+  display: none;
+  width: calc(100% - 2rem);
+  background: white;
+  position: absolute;
+  top: 75px;
+  left: 1rem;
+  border-radius: 1.5rem;
+  padding: 1rem 0;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.mobile-link {
+  padding: 0.75rem 1.5rem;
+  display: block;
+  color: var(--text-dark);
+  font-weight: 500;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.mobile-dropdown-header {
+  padding: 1.5rem 1.5rem 0.5rem;
+  font-weight: 600;
+  color: var(--text-light);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.mobile-link.sub {
+  padding-left: 2.5rem;
+}
+
+@media (max-width: 1024px) {
+
+  .desktop-nav,
+  .header-actions {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: block;
+  }
+
+  .mobile-nav {
+    display: flex;
+  }
+}

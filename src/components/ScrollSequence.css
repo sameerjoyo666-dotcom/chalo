@@ -1,0 +1,46 @@
+.hero-scroll-container {
+  height: 400vh; /* Increased drastically to slow down the 160-frame scrub */
+  width: 100%;
+  position: relative;
+  z-index: 1; /* Allow standard stack so buttons are clickable */
+}
+
+.sticky-hero {
+  position: sticky !important;
+  top: 90px; /* Sticks right below the floating header pill */
+  margin: 0 auto !important; /* Overrides static margins */
+  z-index: 10;
+}
+
+.sequence-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.sequence-loader {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #111; /* Clean dark background */
+  color: white;
+  z-index: 2;
+  font-family: inherit;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+.spinner {
+  width: 40px; height: 40px;
+  border: 4px solid rgba(255,255,255,0.1);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin 1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin { 100% { transform: rotate(360deg); } }

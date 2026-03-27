@@ -1,0 +1,11 @@
+Model Information:
+* title:	2009 BMW X5 XDrive 4.8i
+* source:	https://sketchfab.com/3d-models/2009-bmw-x5-xdrive-48i-08b867223842444baaf88bd442991c5f
+* author:	tonielpro520 (https://sketchfab.com/tonielpro520)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "2009 BMW X5 XDrive 4.8i" (https://sketchfab.com/3d-models/2009-bmw-x5-xdrive-48i-08b867223842444baaf88bd442991c5f) by tonielpro520 (https://sketchfab.com/tonielpro520) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

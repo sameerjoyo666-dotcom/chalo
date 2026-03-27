@@ -1,0 +1,33 @@
+.reveal-wrapper {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  will-change: opacity, transform;
+}
+
+/* Initial States */
+.reveal-wrapper.fade-up {
+  transform: translateY(40px);
+}
+
+.reveal-wrapper.fade-down {
+  transform: translateY(-40px);
+}
+
+.reveal-wrapper.fade-left {
+  transform: translateX(40px); /* Moves towards left */
+}
+
+.reveal-wrapper.fade-right {
+  transform: translateX(-40px); /* Moves towards right */
+}
+
+.reveal-wrapper.zoom-in {
+  transform: scale(0.85);
+}
+
+/* Final Visible State */
+.reveal-wrapper.is-visible {
+  opacity: 1;
+  transform: translate(0) scale(1);
+}
