@@ -25,7 +25,7 @@
   background: #fdf8f4;
   overflow: hidden;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(27, 60, 101, 0.05);
+  border: 1px solid rgba(var(--secondary-rgb), 0.05);
 
   /* Same reveal animation as the Lottie transition */
   animation: mapReveal 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.46s both;
@@ -75,7 +75,7 @@
 .orb-a {
   width: 55vw;
   height: 55vw;
-  background: #e77e22;
+  background: var(--primary);
   top: -15vh;
   left: -15vw;
   animation: orbPulse 10s ease-in-out infinite alternate;
@@ -128,7 +128,7 @@
   z-index: 10;
   font-size: clamp(1.4rem, 3vw, 2.2rem);
   font-weight: 900;
-  color: #1B3C65;
+  color: var(--secondary);
   text-transform: uppercase;
   letter-spacing: 2px;
   white-space: nowrap;
@@ -182,7 +182,7 @@
 .overlay-service-name {
   font-size: clamp(1.8rem, 4vw, 3.5rem);
   font-weight: 900;
-  color: #1B3C65;
+  color: var(--secondary);
   text-transform: uppercase;
   line-height: 1;
   letter-spacing: -1px;
@@ -192,7 +192,7 @@
 .overlay-tagline {
   font-size: clamp(0.8rem, 1.5vw, 1.1rem);
   font-weight: 600;
-  color: #e77e22;
+  color: var(--primary);
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -208,7 +208,7 @@
   border-radius: 2.5rem;
 
   /* Solid Chaloo Orange — no glass */
-  background: linear-gradient(135deg, #e77e22 0%, #c06516 100%);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-hover) 100%);
   border: none;
   box-shadow:
     0 20px 60px rgba(231, 126, 34, 0.4),
@@ -245,7 +245,7 @@
   font-size: clamp(3.5rem, 10vw, 10rem);
   font-weight: bolder;
   text-transform: uppercase;
-  color: #1B3C65;
+  color: var(--secondary);
   letter-spacing: -3px;
   line-height: 0.95;
   white-space: nowrap;
@@ -303,7 +303,7 @@
 .dot-pip.active {
   width: 28px;
   border-radius: 4px;
-  background: #e77e22;
+  background: var(--primary);
 }
 
 /* ─── Responsive ─── */

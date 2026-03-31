@@ -109,8 +109,20 @@ const Home = () => {
               </p>
 
               <div className="hero-cta-group">
-                <a href={playStoreLink} className="btn btn-primary btn-lg shadow-lg" style={{ padding: '1.2rem 3rem' }}>Get Chalo App</a>
-                <button className="btn btn-outline-dark btn-lg" style={{ border: '2px solid #ddd', padding: '1.2rem 3rem' }}>Book Now</button>
+                <a
+                  href={playStoreLink}
+                  className="btn btn-primary shadow-lg rounded-pill"
+                  style={{ padding: '0.6rem 2rem' }}
+                >
+                  Get Chalo App
+                </a>
+
+                <button
+                  className="btn btn-outline-dark rounded-pill"
+                  style={{ border: '2px solid #ddd', padding: '0.6rem 2rem' }}
+                >
+                  Book Now
+                </button>
               </div>
 
               <ul className="hero-checklist">

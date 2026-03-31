@@ -113,7 +113,7 @@
 .btn-outline {
   background: transparent;
   color: var(--text-dark);
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--gray-200);
   padding: 0.6rem 1.25rem;
   border-radius: 999px;
   font-weight: 500;
@@ -131,12 +131,12 @@
   border-radius: 999px;
   padding: 0.6rem 1.25rem;
   font-size: 0.95rem;
-  box-shadow: 0 4px 15px rgba(231, 126, 34, 0.3);
+  box-shadow: 0 4px 15px rgba(var(--primary-rgb), 0.3);
   transition: all 0.3s ease;
 }
 
 .btn-pill:hover {
-  box-shadow: 0 8px 20px rgba(231, 126, 34, 0.4);
+  box-shadow: 0 8px 20px rgba(var(--primary-rgb), 0.4);
   transform: translateY(-2px);
 }
 
@@ -167,7 +167,7 @@
   display: block;
   color: var(--text-dark);
   font-weight: 500;
-  border-bottom: 1px solid #f3f4f6;
+  border-bottom: 1px solid var(--gray-100);
 }
 
 .mobile-dropdown-header {

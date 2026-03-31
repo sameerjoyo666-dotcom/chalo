@@ -37,7 +37,7 @@
 .map-label {
   font-size: 14px;
   font-weight: 700;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-main);
 }
 
 /* Orange vehicle dot pulse ring */
