@@ -22,7 +22,7 @@ const CarModel = () => {
         
         if (name.includes('body') || name.includes('paint') || matName.includes('body') || matName.includes('paint')) {
           obj.material = obj.material.clone();
-          obj.material.color.set('#e77e22');
+          obj.material.color.set('var(--primary)');
           obj.material.roughness = 0.2;
           obj.material.metalness = 0.9;
         }

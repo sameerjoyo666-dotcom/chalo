@@ -7,7 +7,7 @@
   height: 100vh;
   z-index: -1;
   overflow: hidden;
-  background: #ffffff;
+  background: var(--white);
 }
 
 .blob {
@@ -144,7 +144,7 @@ section.section-cream {
 
 .hero-description {
   font-size: 1.25rem;
-  color: #555;
+  color: var(--gray-600);
   line-height: 1.6;
   margin-bottom: 2.0rem;
 }
@@ -166,7 +166,7 @@ section.section-cream {
   align-items: center;
   gap: 10px;
   margin-bottom: 12px;
-  color: #444;
+  color: var(--gray-700);
   font-weight: 600;
 }
 
@@ -189,7 +189,7 @@ section.section-cream {
   transform: translateX(-50%);
   width: 200px;
   /* Slightly wider */
-  background: #f1f5f9;
+  background: var(--gray-50);
   /* Soft Slate Gray */
   border-left: 2px solid var(--gray-300);
   border-right: 2px solid var(--gray-300);
@@ -251,7 +251,7 @@ section.section-cream {
 }
 
 .rating-badge {
-  background: #10b981;
+  background: var(--success);
   color: white;
   padding: 4px 10px;
   border-radius: 99px;
@@ -280,7 +280,7 @@ section.section-cream {
 }
 
 .stat-val {
-  color: #10b981;
+  color: var(--success);
   text-transform: uppercase;
   font-weight: 850;
 }
@@ -338,7 +338,7 @@ section.section-cream {
   height: 400px;
   border-radius: 40px;
   background: black;
-  border: 12px solid #111;
+  border: 12px solid var(--gray-900);
   overflow: hidden;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
@@ -438,7 +438,7 @@ section.section-cream {
 }
 
 .water.water-bg {
-  background: rgba(231, 126, 34, 0.3);
+  background: rgba(var(--primary-rgb), 0.3);
   animation-duration: 8s;
   top: calc(100% - var(--level) - 5px);
 }
@@ -455,7 +455,7 @@ section.section-cream {
   z-index: 10;
   font-size: 0.85rem;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--white);
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   letter-spacing: 0.5px;
 }
@@ -539,7 +539,7 @@ section.section-cream {
 
 .dash-card:hover {
   transform: translateY(-12px) scale(1.03) !important;
-  box-shadow: 0 25px 45px rgba(231, 126, 34, 0.15);
+  box-shadow: 0 25px 45px rgba(var(--primary-rgb), 0.15);
   animation-play-state: paused;
 }
 
@@ -574,7 +574,7 @@ section.section-cream {
 }
 
 .trend.up {
-  color: #10b981;
+  color: var(--success);
 }
 
 /* Bar Chart */
@@ -585,7 +585,7 @@ section.section-cream {
   height: 120px;
   margin-top: 1.5rem;
   padding-bottom: 0.5rem;
-  border-bottom: 1px dashed #e5e7eb;
+  border-bottom: 1px dashed var(--gray-200);
 }
 
 .bar-group {
@@ -685,7 +685,7 @@ section.section-cream {
 .b-main {
   width: 100px;
   height: 100px;
-  background: rgba(231, 126, 34, 0.15);
+  background: rgba(var(--primary-rgb), 0.15);
   /* Soft primary */
   color: var(--primary);
   top: 5%;
@@ -696,7 +696,7 @@ section.section-cream {
 .b-sec {
   width: 80px;
   height: 80px;
-  background: #fdf8f4;
+  background: var(--bg-cream);
   /* Cream */
   color: #c06516;
   /* Primary dark */
@@ -720,7 +720,7 @@ section.section-cream {
 .b-quat {
   width: 45px;
   height: 45px;
-  background: rgba(231, 126, 34, 0.05);
+  background: rgba(var(--primary-rgb), 0.05);
   /* Faint orange */
   color: var(--primary);
   bottom: 25%;
@@ -758,7 +758,7 @@ section.section-cream {
 }
 
 .b-quat-bg {
-  background: rgba(231, 126, 34, 0.5);
+  background: rgba(var(--primary-rgb), 0.5);
   /* Semi orange */
 }
 
@@ -851,7 +851,7 @@ section.section-cream {
 
 .mini-bar {
   height: 6px;
-  background: #f3f4f6;
+  background: var(--gray-100);
   border-radius: 3px;
   width: 100%;
 }
@@ -891,7 +891,7 @@ section.section-cream {
 }
 
 .icon-orange {
-  background: rgba(231, 126, 34, 0.1);
+  background: rgba(var(--primary-rgb), 0.1);
   color: var(--primary);
   padding: 12px;
   border-radius: 12px;
@@ -917,6 +917,179 @@ section.section-cream {
   text-align: center;
 }
 
+/* ─── Fancy Section Headings (Pinterest-Inspired Floating Pills) ─── */
+.fancy-title-wrap {
+  position: relative;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+.fancy-title-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.fancy-heading {
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  font-weight: 900;
+  line-height: 1.2;
+  color: var(--gray-900);
+  letter-spacing: -1.5px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Gradient highlighted word */
+.gradient-word {
+  background: linear-gradient(135deg, var(--primary) 0%, #f5a623 50%, var(--primary) 100%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 4s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50%      { background-position: 100% 50%; }
+}
+
+/* ─── Floating Pill Labels (Spring-in + Drift) ─── */
+.floating-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: var(--gray-700);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  box-shadow:
+    0 2px 12px rgba(0, 0, 0, 0.06),
+    0 0 0 1px rgba(0, 0, 0, 0.03);
+  position: absolute;
+  z-index: 3;
+  white-space: nowrap;
+  text-transform: capitalize;
+
+  /* Spring-in entry */
+  animation: pillSpringIn 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) both,
+             pillDrift 5s ease-in-out infinite 0.8s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.floating-pill:hover {
+  transform: scale(1.1) !important;
+  box-shadow: 0 6px 24px rgba(var(--primary-rgb), 0.18);
+}
+
+.floating-pill svg {
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+/* Spring-in: scale from 0 with overshoot */
+@keyframes pillSpringIn {
+  0%   { opacity: 0; transform: scale(0) translateY(8px); }
+  60%  { opacity: 1; transform: scale(1.12) translateY(-2px); }
+  80%  { transform: scale(0.95) translateY(1px); }
+  100% { transform: scale(1) translateY(0); }
+}
+
+/* Persistent slow drift — subtle and organic */
+@keyframes pillDrift {
+  0%, 100% { transform: translate(0, 0); }
+  25%      { transform: translate(3px, -4px); }
+  50%      { transform: translate(-2px, -6px); }
+  75%      { transform: translate(4px, -2px); }
+}
+
+/* ─── Pill Positions (tight to heading) ─── */
+
+/* Left pill — hugs left edge, slightly above center */
+.fp-left {
+  left: 0;
+  top: 0;
+  transform: translate(-110%, -30%);
+  animation: pillSpringIn 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) both,
+             pillDriftLeft 5s ease-in-out infinite 0.8s;
+}
+
+/* Right pill — hugs right edge, slightly below center */
+.fp-right {
+  right: 0;
+  top: 40%;
+  transform: translate(110%, -30%);
+  animation: pillSpringIn 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) both,
+             pillDriftRight 5s ease-in-out infinite 0.8s;
+}
+
+/* Top-right — sits just above and to the right of heading */
+.fp-top-right {
+  right: -10px;
+  top: -24px;
+  animation: pillSpringIn 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) both,
+             pillDriftTop 5s ease-in-out infinite 0.8s;
+}
+
+/* Top-left — sits just above and to the left */
+.fp-top-left {
+  left: -10px;
+  top: -24px;
+  animation: pillSpringIn 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) both,
+             pillDriftTop 5s ease-in-out infinite 0.8s;
+}
+
+/* Asymmetric drift for left pill */
+@keyframes pillDriftLeft {
+  0%, 100% { transform: translate(-110%, -30%); }
+  33%      { transform: translate(-108%, -35%); }
+  66%      { transform: translate(-112%, -28%); }
+}
+
+/* Asymmetric drift for right pill */
+@keyframes pillDriftRight {
+  0%, 100% { transform: translate(110%, -30%); }
+  33%      { transform: translate(112%, -34%); }
+  66%      { transform: translate(108%, -26%); }
+}
+
+/* Drift for top pills */
+@keyframes pillDriftTop {
+  0%, 100% { transform: translateY(0); }
+  33%      { transform: translate(3px, -5px); }
+  66%      { transform: translate(-2px, -3px); }
+}
+
+/* Subtitle below fancy heading */
+.fancy-subtitle {
+  font-size: 1.05rem;
+  color: var(--gray-500);
+  max-width: 560px;
+  margin: 1.2rem auto 0;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+/* Responsive: hide floating pills on small screens */
+@media (max-width: 768px) {
+  .floating-pill {
+    display: none;
+  }
+
+  .fancy-heading {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+  }
+}
+
 .features-grid-3d {
   display: flex;
   flex-wrap: wrap;
@@ -933,14 +1106,14 @@ section.section-cream {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  box-shadow: 0 25px 40px -12px rgba(231, 126, 34, 0.4);
+  box-shadow: 0 25px 40px -12px rgba(var(--primary-rgb), 0.4);
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
   cursor: pointer;
 }
 
 .feature-card-3d:hover {
   transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 35px 50px -15px rgba(231, 126, 34, 0.5);
+  box-shadow: 0 35px 50px -15px rgba(var(--primary-rgb), 0.5);
 }
 
 .fc-paper {
@@ -1031,7 +1204,7 @@ section.section-cream {
   width: 100%;
   height: 62%;
   border-radius: 0 0 1.5rem 1.5rem;
-  background: linear-gradient(150deg, rgba(231, 126, 34, 0.85) 0%, rgba(192, 101, 22, 0.98) 100%);
+  background: linear-gradient(150deg, rgba(var(--primary-rgb), 0.85) 0%, rgba(192, 101, 22, 0.98) 100%);
   backdrop-filter: blur(12px) saturate(200%);
   -webkit-backdrop-filter: blur(12px) saturate(200%);
   z-index: 5;
@@ -1158,13 +1331,13 @@ section.section-cream {
 
 .test-card-new:hover {
   transform: translateY(-8px) scale(1.02) !important;
-  box-shadow: 0 20px 40px rgba(231, 126, 34, 0.25);
+  box-shadow: 0 20px 40px rgba(var(--primary-rgb), 0.25);
   background: white;
   z-index: 10;
   position: relative;
   opacity: 1 !important;
   filter: blur(0) !important;
-  border-color: rgba(231, 126, 34, 0.5);
+  border-color: rgba(var(--primary-rgb), 0.5);
 }
 
 .card-tang-water {
@@ -1181,7 +1354,7 @@ section.section-cream {
 }
 
 .tang-bg {
-  background: rgba(231, 126, 34, 0.5);
+  background: rgba(var(--primary-rgb), 0.5);
   animation-duration: 8s;
 }
 
@@ -1217,7 +1390,7 @@ section.section-cream {
 .quote-mark-bg {
   font-family: Georgia, serif;
   font-size: 5rem;
-  color: rgba(231, 126, 34, 0.1);
+  color: rgba(var(--primary-rgb), 0.1);
   font-weight: 900;
   line-height: 1;
   transition: color 0.5s ease;
@@ -1242,7 +1415,7 @@ section.section-cream {
   justify-content: center;
   width: 44px;
   height: 44px;
-  background: rgba(231, 126, 34, 0.1);
+  background: rgba(var(--primary-rgb), 0.1);
   color: var(--primary);
   border-radius: 50%;
 }
@@ -1286,7 +1459,7 @@ section.section-cream {
 
 .star-inactive {
   fill: none;
-  color: #d1d5db;
+  color: var(--gray-300);
   transition: all 0.5s ease;
 }
 
@@ -1301,7 +1474,7 @@ section.section-cream {
 
 .test-body-new {
   font-size: 0.95rem;
-  color: #4b5563;
+  color: var(--gray-600);
   line-height: 1.5;
   font-weight: 400;
   flex: 1;
@@ -1360,7 +1533,7 @@ section.section-cream {
 
 .contact-form-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 25px 45px -10px rgba(231, 126, 34, 0.12);
+  box-shadow: 0 25px 45px -10px rgba(var(--primary-rgb), 0.12);
 }
 
 .contact-form-card h3 {
@@ -1381,7 +1554,7 @@ section.section-cream {
 .form-group textarea {
   width: 100%;
   padding: 1rem;
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--gray-200);
   border-radius: 0.5rem;
   font-family: inherit;
   font-size: 1rem;
@@ -1392,7 +1565,7 @@ section.section-cream {
 .form-group textarea:focus {
   outline: none;
   border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(231, 126, 34, 0.1);
+  box-shadow: 0 0 0 3px rgba(var(--primary-rgb), 0.1);
 }
 
 .form-submit-btn {
@@ -1401,7 +1574,7 @@ section.section-cream {
 
 .form-submit-btn:hover {
   transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 15px 20px -5px rgba(231, 126, 34, 0.4);
+  box-shadow: 0 15px 20px -5px rgba(var(--primary-rgb), 0.4);
 }
 
 .w-full {

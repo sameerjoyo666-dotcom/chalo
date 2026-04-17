@@ -93,7 +93,7 @@
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 1.5rem;
   font-size: 0.85rem;
-  color: #9ca3af;
+  color: var(--gray-400);
 }
 
 .footer-bottom-links {

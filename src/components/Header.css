@@ -53,21 +53,27 @@
 .desktop-nav {
   display: flex;
   align-items: center;
-  gap: 1.2rem;
+  gap: 0.5rem; /* Tighter gap because pills have padding */
 }
 
 .nav-link {
-  font-weight: 500;
-  color: var(--text-dark);
+  font-weight: 600;
+  color: #475569; /* Slate grey for idle */
   font-size: 0.9rem;
   display: inline-flex;
   align-items: center;
-  transition: all 0.3s ease;
+  padding: 8px 16px;
+  border-radius: 100px; /* Tab Pill Shape */
+  background: transparent;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  letter-spacing: 0.3px;
 }
 
 .nav-link:hover,
 .nav-link.active {
   color: var(--primary);
+  background: #F1F5F9; /* Soft background fill like a pill */
+  transform: translateY(-1px);
 }
 
 .dropdown-container {

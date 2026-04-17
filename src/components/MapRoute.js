@@ -71,22 +71,22 @@ const MapRoute = () => {
           ref={pathRef}
           d="M 120 75 C 120 120, 60 150, 72 195 C 84 240, 180 268, 165 285"
           fill="none"
-          stroke="#e77e22"
+          stroke="var(--primary)"
           strokeWidth="6"
           strokeLinecap="round"
           filter="url(#routeGlow)"
         />
 
         {/* Origin pin */}
-        <circle cx="120" cy="75"  r="11" fill="#1B3C65" filter="url(#pinGlow)" />
+        <circle cx="120" cy="75"  r="11" fill="var(--secondary)" filter="url(#pinGlow)" />
         <circle cx="120" cy="75"  r="5"  fill="white" />
 
         {/* Destination pin — green */}
-        <circle cx="190" cy="370" r="13" fill="#1aa15f" filter="url(#pinGlow)" />
+        <circle cx="190" cy="370" r="13" fill="var(--success)" filter="url(#pinGlow)" />
         <circle cx="190" cy="370" r="6"  fill="white" />
 
         {/* Moving dot */}
-        <circle ref={orangeDotRef} cx="120" cy="75" r="9"   fill="#e77e22" filter="url(#pinGlow)" className="vehicle-dot" />
+        <circle ref={orangeDotRef} cx="120" cy="75" r="9"   fill="var(--primary)" filter="url(#pinGlow)" className="vehicle-dot" />
         <circle ref={whiteDotRef}  cx="120" cy="75" r="4"   fill="white" />
       </svg>
     </div>

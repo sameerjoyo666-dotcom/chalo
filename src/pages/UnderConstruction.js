@@ -11,13 +11,13 @@ const UnderConstruction = ({ pageName }) => {
       padding: '6rem 2rem',
       textAlign: 'center',
       minHeight: '60vh',
-      backgroundColor: '#fdf8f4'
+      backgroundColor: 'var(--bg-cream)'
     }}>
-      <Settings size={64} color="#e77e22" style={{ marginBottom: '2rem', animation: 'spin 4s linear infinite' }} />
-      <h1 style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#374151', marginBottom: '1rem' }}>
+      <Settings size={64} color="var(--primary)" style={{ marginBottom: '2rem', animation: 'spin 4s linear infinite' }} />
+      <h1 style={{ fontSize: '2.5rem', fontWeight: 'bold', color: 'var(--gray-700)', marginBottom: '1rem' }}>
         {pageName}
       </h1>
-      <p style={{ fontSize: '1.2rem', color: '#6b7280', maxWidth: '500px' }}>
+      <p style={{ fontSize: '1.2rem', color: 'var(--gray-500)', maxWidth: '500px' }}>
         This page is currently under construction. Please check back later!
       </p>
 

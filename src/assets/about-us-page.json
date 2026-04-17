@@ -1,0 +1,191 @@
+{
+  "markdown": "[![Chaloo Logo](https://chaloo.com.pk/_next/image?url=%2FChaloLogo.png&w=384&q=75)](https://chaloo.com.pk/)\n\n[Home](https://chaloo.com.pk/) [About Us](https://chaloo.com.pk/about) [Service](https://chaloo.com.pk/service) [Team](https://chaloo.com.pk/teams) [Impact](https://chaloo.com.pk/impact)\n\nMore\n\n[Mobile App](https://play.google.com/store/apps/details?id=com.dev_chaloo.chaloomobile&pli=1) Sign Up\n\n![slide-0](https://ik.imagekit.io/rylbggvwj/smartSafar.jpeg)\n\n![slide-1](https://ik.imagekit.io/rylbggvwj/pinkV.jpeg)\n\n![slide-2](https://ik.imagekit.io/rylbggvwj/safeRoute.jpeg)\n\n![slide-3](https://ik.imagekit.io/rylbggvwj/CashPayment.jpeg)\n\n- 1\n- 2\n- 3\n- 4\n\n## Pakistan leading integrated Mobility app\n\nChaloo Technologies Pvt Ltd.is Pakistan’s leading provider of integrated mobility solutions. On a journey to bring all possible mobility services into a single app, we focus on electric and sustainable micromobility options. Empowering communities with smarter, greener, and connected experiences, we are redefining on-demand mobility.”\n\nVisionMissionObjectives\n\n## Our Vision\n\nChaloo envisions becoming Pakistan’s most trusted and innovative ride-hailing platform. We aim to lead the way in providing seamlessly integrated mobility application solutions that actively support sustainable urban growth. Ultimately, our vision is to significantly improve the lives of both our users and dedicated drivers across the nation.\n\n![Our Vision](https://chaloo.com.pk/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Frimpec75t%2FMission%2520Vision_Vission%252001.png&w=640&q=75)\n\n### Our Values\n\nTeam WorkCompassionCollaborationCommunity Support\n\n## Team Work\n\nAt Chaloo, teamwork is at the core of everything we do. We foster an environment where ideas flow freely, strengths complement one another, and collective goals are achieved through mutual trust and dedication.\n\n![Team Work](https://chaloo.com.pk/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Frimpec75t%2FTeam%2520Retouced.jpg&w=1200&q=75)\n\n![Logo](https://chaloo.com.pk/_next/image?url=%2FChaloLogo.png&w=384&q=75)\n\nReliable, affordable, and comfortable travel. Thousands of happy passengers trust us across Pakistan.\n\n### Quick Links\n\n- [Home](https://chaloo.com.pk/)\n- [About Us](https://chaloo.com.pk/about)\n- [Service](https://chaloo.com.pk/service)\n- [Teams](https://chaloo.com.pk/teams)\n- [Collaborators](https://chaloo.com.pk/collaborators)\n- [Impact](https://chaloo.com.pk/impact)\n- [Career](https://chaloo.com.pk/career)\n- [FAQ's](https://chaloo.com.pk/faqs)\n- [Booking](https://chaloo.com.pk/bookaride)\n\n### Contact Us\n\n[+92 314 8461261](tel:+923148461261)\n\n[support@chaloo.com.pk](mailto:support@chaloo.com.pk)\n\n[business@chaloo.com.pk](mailto:business@chaloo.com.pk)\n\n### Download App\n\n[Get it on Play Store](https://play.google.com/store/apps/details?id=com.dev_chaloo.chaloomobile&pli=1)\n\n© 2026Chaloo. All rights reserved.\n\n[Privacy Policy](https://chaloo.com.pk/privacy-policy) [Terms Condition](https://chaloo.com.pk/terms-and-conditions)",
+  "branding": {
+    "colorScheme": "light",
+    "fonts": [
+      {
+        "family": "Geist",
+        "role": "unknown"
+      }
+    ],
+    "colors": {
+      "primary": "#FFF7ED",
+      "secondary": "#99A1AF",
+      "accent": "#E67E22",
+      "background": "#FFFFFF",
+      "textPrimary": "#000000",
+      "link": "#E67E22"
+    },
+    "typography": {
+      "fontFamilies": {
+        "primary": "Geist",
+        "heading": "Geist"
+      },
+      "fontStacks": {
+        "heading": [
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif",
+          "Apple Color Emoji",
+          "Segoe UI Emoji",
+          "Segoe UI Symbol",
+          "Noto Color Emoji"
+        ],
+        "body": [
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif",
+          "Apple Color Emoji",
+          "Segoe UI Emoji",
+          "Segoe UI Symbol",
+          "Noto Color Emoji"
+        ],
+        "paragraph": [
+          "Geist"
+        ]
+      },
+      "fontSizes": {
+        "h1": "16px",
+        "h2": "48px",
+        "body": "20px"
+      }
+    },
+    "spacing": {
+      "baseUnit": 4,
+      "borderRadius": "0px"
+    },
+    "components": {
+      "buttonPrimary": {
+        "background": "#E67E22",
+        "textColor": "#FFFFFF",
+        "borderRadius": "10px",
+        "borderRadiusCorners": {
+          "topLeft": "10px",
+          "topRight": "10px",
+          "bottomRight": "10px",
+          "bottomLeft": "10px"
+        },
+        "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px"
+      },
+      "buttonSecondary": {
+        "background": "#FFFFFF",
+        "textColor": "#E67E22",
+        "borderRadius": "33554400px",
+        "borderRadiusCorners": {
+          "topLeft": "33554400px",
+          "topRight": "33554400px",
+          "bottomRight": "33554400px",
+          "bottomLeft": "33554400px"
+        },
+        "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px"
+      }
+    },
+    "images": {
+      "logo": "https://chaloo.com.pk/_next/image?url=%2FChaloLogo.png&w=384&q=75",
+      "favicon": "https://chaloo.com.pk/icon.png",
+      "ogImage": null,
+      "logoHref": "/",
+      "logoAlt": "Chaloo Logo"
+    },
+    "__llm_logo_reasoning": {
+      "selectedIndex": 0,
+      "reasoning": "Selected #0 because it is visible, located in the header, links to the homepage, and matches the brand name 'Chaloo Technologies'.",
+      "confidence": 0.9,
+      "source": "llm"
+    },
+    "__llm_button_reasoning": {
+      "primary": {
+        "index": 0,
+        "text": "Get it on Play Store",
+        "reasoning": "Button #0 ('Get it on Play Store') uses the vibrant brand color #E67E22, making it the most prominent and action-oriented CTA on the page."
+      },
+      "secondary": {
+        "index": 3,
+        "text": "Community Support",
+        "reasoning": "Button #3 ('Community Support') has a different background color (#FFFFFF) and serves as a secondary action with a supportive role."
+      },
+      "confidence": 0.95
+    },
+    "personality": {
+      "tone": "modern",
+      "energy": "medium",
+      "targetAudience": "tech-savvy individuals and businesses"
+    },
+    "designSystem": {
+      "framework": "tailwind",
+      "componentLibrary": ""
+    },
+    "confidence": {
+      "buttons": 0.95,
+      "colors": 0.9,
+      "overall": 0.925
+    },
+    "__llm_metadata": {
+      "logoSelection": {
+        "llmCalled": true,
+        "llmSucceeded": true,
+        "finalSource": "llm",
+        "rawLogoSelection": {
+          "selectedLogoIndex": 0,
+          "selectedLogoReasoning": "Selected #0 because it is visible, located in the header, links to the homepage, and matches the brand name 'Chaloo Technologies'.",
+          "confidence": 0.9
+        }
+      },
+      "buttonClassification": {
+        "llmCalled": true,
+        "llmSucceeded": true
+      }
+    }
+  },
+  "metadata": {
+    "description": "Chaloo Technologies",
+    "language": "en",
+    "title": "Chaloo Technologies",
+    "viewport": "width=device-width, initial-scale=1",
+    "next-size-adjust": "",
+    "favicon": "https://chaloo.com.pk/icon.png",
+    "scrapeId": "019d42c3-4e20-7739-af99-8826de8b39e2",
+    "sourceURL": "https://chaloo.com.pk/about",
+    "url": "https://chaloo.com.pk/about",
+    "statusCode": 200,
+    "contentType": "text/html; charset=utf-8",
+    "timezone": "America/New_York",
+    "proxyUsed": "basic",
+    "indexId": "f585792f-6e2c-45c3-8a0d-dc350f001219",
+    "creditsUsed": 5
+  },
+  "links": [
+    "https://chaloo.com.pk/",
+    "https://chaloo.com.pk/about",
+    "https://chaloo.com.pk/service",
+    "https://chaloo.com.pk/teams",
+    "https://chaloo.com.pk/impact",
+    "https://play.google.com/store/apps/details?id=com.dev_chaloo.chaloomobile&pli=1",
+    "https://www.facebook.com/Chaloo.pk",
+    "https://wa.me/+923148461261",
+    "https://www.instagram.com/chaloo.pk/#",
+    "https://www.linkedin.com/company/chaloo-technologies-private-limited/",
+    "https://chaloo.com.pk/collaborators",
+    "https://chaloo.com.pk/career",
+    "https://chaloo.com.pk/faqs",
+    "https://chaloo.com.pk/bookaride",
+    "tel:+923148461261",
+    "mailto:support@chaloo.com.pk",
+    "mailto:business@chaloo.com.pk",
+    "https://chaloo.com.pk/privacy-policy",
+    "https://chaloo.com.pk/terms-and-conditions"
+  ],
+  "images": [
+    "https://ik.imagekit.io/rylbggvwj/pinkV.jpeg",
+    "https://chaloo.com.pk/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Frimpec75t%2FTeam%2520Retouced.jpg&w=1200&q=75",
+    "https://ik.imagekit.io/rylbggvwj/safeRoute.jpeg",
+    "https://ik.imagekit.io/rylbggvwj/CashPayment.jpeg",
+    "https://chaloo.com.pk/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Frimpec75t%2FMission%2520Vision_Vission%252001.png&w=640&q=75",
+    "https://chaloo.com.pk/_next/image?url=%2FChaloLogo.png&w=384&q=75",
+    "https://ik.imagekit.io/rylbggvwj/smartSafar.jpeg"
+  ],
+  "json": {
+    "company_name": "Chaloo Technologies Pvt Ltd",
+    "company_description": "Chaloo Technologies Pvt Ltd. is Pakistan’s leading provider of integrated mobility solutions, focusing on electric and sustainable micromobility options. They aim to empower communities with smarter, greener, and connected experiences while redefining on-demand mobility."
+  }
+}

@@ -15,7 +15,13 @@ import {
   CreditCard,
   Headphones,
   Bot,
-  UserCircle
+  UserCircle,
+  Route,
+  Navigation,
+  Car,
+  MessageCircle,
+  ArrowRight,
+  Zap
 } from 'lucide-react';
 import teslaTop from '../assets/TeslaTop.png';
 import Reveal from '../components/Reveal';
@@ -165,10 +171,17 @@ const Home = () => {
           <div className="dashboard-content">
             <Reveal animation="fade-right">
               <div className="dashboard-content">
-                <h2>Ride Instantly, <span className="highlight">Anytime</span></h2>
-                <br />
-                <p style={{ color: "var(--text-light)", fontSize: "0.95rem", lineHeight: "1.6", marginBottom: "2rem" }}>
-                  Safe, intelligent, and budget-friendly rides experience why our clients trust Chaloo
+                <div className="fancy-title-wrap">
+                  <h2 className="fancy-heading">
+                    Ride Instantly,<br />
+                    <span className="gradient-word">Anytime</span>
+                  </h2>
+                  <span className="floating-pill fp-top-right" style={{ animationDelay: '0s' }}>
+                    <Navigation size={14} /> smart routes
+                  </span>
+                </div>
+                <p className="fancy-subtitle">
+                  Safe, intelligent, and budget-friendly rides — experience why our clients trust Chalo.
                 </p>
 
                 <div className="liquid-grid">
@@ -275,7 +288,7 @@ const Home = () => {
                   <div className="gauge-container">
                     <svg viewBox="0 0 100 50" className="gauge-svg">
                       <path d="M 10 50 A 40 40 0 0 1 90 50" fill="none" stroke="#f0f0f0" strokeWidth="8" strokeLinecap="round" />
-                      <path d="M 10 50 A 40 40 0 0 1 90 50" fill="none" stroke="#e77e22" strokeWidth="8" strokeLinecap="round" className="gauge-path animate-gauge" strokeDasharray="125.6" strokeDashoffset="125.6" style={{ '--target-offset': '6.2' }} />
+                      <path d="M 10 50 A 40 40 0 0 1 90 50" fill="none" stroke="var(--primary)" strokeWidth="8" strokeLinecap="round" className="gauge-path animate-gauge" strokeDasharray="125.6" strokeDashoffset="125.6" style={{ '--target-offset': '6.2' }} />
                     </svg>
                     <div className="gauge-text">
                       <h2>941.52K</h2>
@@ -356,8 +369,18 @@ const Home = () => {
       <section className="why-us-section section">
         <div className="container">
           <Reveal animation="fade-down">
-            <div className="section-title text-center">
-              <h2>Why Choose <span className="highlight">Us?</span></h2>
+            <div className="fancy-title-wrap fancy-title-center">
+              <span className="floating-pill fp-left" style={{ animationDelay: '0.2s' }}>
+                <ShieldCheck size={14} /> trusted
+              </span>
+              <h2 className="fancy-heading">
+                Why Choose Chalo<br />
+                for Your <span className="gradient-word">Rides?</span>
+              </h2>
+              <span className="floating-pill fp-right" style={{ animationDelay: '0.5s' }}>
+                <Route size={14} /> smart routes
+              </span>
+              <p className="fancy-subtitle">Safe, smart & affordable mobility — built for Pakistan's roads.</p>
             </div>
           </Reveal>
 
@@ -405,9 +428,18 @@ const Home = () => {
       <section className="testimonials-section section section-cream">
         <div className="container">
           <Reveal animation="fade-up">
-            <div className="section-title text-center">
-              <h2>What Our Customers Say</h2>
-              <p>Real stories from users who trust Chaloo for safe, reliable, and comfortable intercity travel.</p>
+            <div className="fancy-title-wrap fancy-title-center">
+              <span className="floating-pill fp-left" style={{ animationDelay: '0.3s' }}>
+                <Star size={14} /> 5-star
+              </span>
+              <h2 className="fancy-heading">
+                What Our Customers<br />
+                <span className="gradient-word">Say</span>
+              </h2>
+              <span className="floating-pill fp-right" style={{ animationDelay: '0.6s' }}>
+                <MessageCircle size={14} /> feedback
+              </span>
+              <p className="fancy-subtitle">Real stories from riders who trust Chalo for safe, reliable, and comfortable intercity travel.</p>
             </div>
           </Reveal>
 
@@ -432,8 +464,16 @@ const Home = () => {
         <div className="container contact-split">
           <div className="contact-features">
             <Reveal animation="fade-right">
-              <h2>Seamless Rides Every Time</h2>
-              <p className="mb-6">Reliable rides, affordable fares, real-time tracking.</p>
+              <div className="fancy-title-wrap">
+                <h2 className="fancy-heading">
+                  Seamless Rides,<br />
+                  <span className="gradient-word">Every Time</span>
+                </h2>
+                <span className="floating-pill fp-top-right" style={{ animationDelay: '0.4s' }}>
+                  <Car size={14} /> book now
+                </span>
+              </div>
+              <p className="fancy-subtitle">Reliable rides, affordable fares, real-time tracking.</p>
             </Reveal>
 
             <ul className="feature-list">
