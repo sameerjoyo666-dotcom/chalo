@@ -1,8 +1,9 @@
 .footer {
   background-color: var(--secondary); /* Brand Blue */
   color: var(--gray-300);
-  /* Gray-300 */
   padding: 4rem 0 1rem;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
 }
 
 .footer-container {
@@ -16,8 +17,7 @@
   height: 72px;
   object-fit: contain;
   margin-bottom: 1rem;
-  filter: brightness(0) invert(1);
-  /* makes logo white if transparent */
+  border-radius: 8px; /* Slight curve for the JPG logo background */
 }
 
 .footer-desc {
