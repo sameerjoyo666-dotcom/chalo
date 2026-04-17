@@ -1,5 +1,5 @@
 .footer {
-  background-color: var(--footer-bg);
+  background-color: var(--secondary); /* Brand Blue */
   color: var(--gray-300);
   /* Gray-300 */
   padding: 4rem 0 1rem;
