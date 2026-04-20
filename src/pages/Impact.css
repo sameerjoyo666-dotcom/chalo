@@ -1,0 +1,195 @@
+/* ─────────────────────────────────────────────
+   IMPACT PAGE – Premium Dynamic Design
+───────────────────────────────────────────── */
+
+.impact-page-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bg-cream, #f7f7f9);
+  overflow: hidden;
+  padding: 120px 5% 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.impact-bg {
+  position: absolute;
+  top: -50vh;
+  left: -20vw;
+  width: 150vw;
+  height: 150vh;
+  background: radial-gradient(circle at center top, rgba(242, 101, 34, 0.05) 0%, rgba(242, 101, 34, 0) 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.impact-content-wrapper {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --- Header Section --- */
+.impact-header {
+  text-align: center;
+  max-width: 800px;
+  margin-bottom: 30px;
+}
+
+.impact-header .decorative-pill {
+  display: inline-block;
+  padding: 8px 24px;
+  background: rgba(var(--primary-rgb, 242, 101, 34), 0.1);
+  border: 1px solid rgba(var(--primary-rgb, 242, 101, 34), 0.2);
+  border-radius: 50px;
+  color: var(--primary, #f26522);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.impact-header h1 {
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-weight: 900;
+  color: var(--secondary, #1e1e1e);
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  margin-bottom: 1rem;
+}
+
+.impact-subtitle {
+  font-size: 1.1rem;
+  color: var(--gray-600, #4b5563);
+  line-height: 1.6;
+}
+
+/* --- PREMIUM HYBRID STORY CONTENT --- */
+.impact-stories-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15vw;
+  width: 100%;
+  margin: 100px 0;
+}
+
+.impact-story-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5vw;
+}
+
+.impact-story-container.reverse {
+  flex-direction: row-reverse;
+}
+
+.story-text-pane {
+  flex: 0 0 35%;
+  height: 100%;
+  position: relative;
+}
+
+.story-sticky-content {
+  position: sticky;
+  top: 150px;
+}
+
+.story-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  background: rgba(var(--primary-rgb, 242, 101, 34), 0.1);
+  color: var(--primary, #f26522);
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+.story-title {
+  font-size: clamp(2.2rem, 3.5vw, 3rem);
+  font-weight: 900;
+  color: var(--secondary, #1e1e1e);
+  line-height: 1.1;
+  margin-bottom: 30px;
+  letter-spacing: -1px;
+}
+
+.story-desc {
+  font-size: 1.1rem;
+  color: var(--gray-600, #4b5563);
+  line-height: 1.7;
+}
+
+.story-gallery-pane {
+  flex: 0 0 55%;
+}
+
+.masonry-collage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 250px;
+  gap: 20px;
+}
+
+.m-card {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+  position: relative;
+}
+
+.m-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  will-change: transform;
+}
+
+.m-card:hover img {
+  transform: scale(1.08); /* beautiful zoom hover */
+}
+
+.m-card-1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3; /* the primary giant picture spanning 2 rows */
+}
+
+.m-card-2 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.m-card-3 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+@media (max-width: 900px) {
+  .impact-story-container, .impact-story-container.reverse {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .story-text-pane, .story-gallery-pane {
+    flex: 1;
+    width: 100%;
+  }
+  .story-sticky-content {
+    position: static;
+  }
+  .masonry-collage {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 280px;
+  }
+  .m-card-1 { grid-column: 1; grid-row: 1; }
+  .m-card-2 { grid-column: 1; grid-row: 2; }
+  .m-card-3 { grid-column: 1; grid-row: 3; }
+}

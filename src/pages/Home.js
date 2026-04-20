@@ -89,6 +89,18 @@ const Home = () => {
     </div>
   );
 
+  const faqs = [
+    { q: "How do I apply for a position?", a: "To join the Chalo team, visit our Careers portal or forward your resume to our dedicated support email." },
+    { q: "Do you offer internships?", a: "Yes! We run seasonal internship programs across engineering, marketing, and operations. Keep an eye on our socials!" },
+    { q: "Can I work remotely?", a: "We embrace a hybrid culture. Select roles offer full remote flexibility, while operational roles require on-site synergy." },
+    { q: "What is the interview process like?", a: "Typically: an initial screening, followed by a technical/skill assessment, and a final cultural fit discussion." },
+    { q: "Do you hire fresh graduates?", a: "Absolutely! We strongly believe in mentoring emerging talent and love welcoming fresh graduates to the tech mobility space." },
+    { q: "Are Chalo EV bikes eco-friendly?", a: "Our EV bikes produce absolutely zero tailpipe emissions, making them the perfect green alternative for daily short-distance commutes." },
+    { q: "How can universities partner with Chalo?", a: "Institutions can reach out to business@chaloo.com.pk. We provide ready-to-deploy, tech-enabled campus shuttle networks." }
+  ];
+
+  const [activeFaq, setActiveFaq] = useState(null);
+
   return (
     <div className="home-container">
       {/* GLOBAL BACKGROUND BLOBS */}
@@ -459,6 +471,8 @@ const Home = () => {
         </div>
       </section>
 
+
+
       {/* 6. CONTACT & MORE FEATURES */}
       <section className="contact-section section">
         <div className="container contact-split">
@@ -507,6 +521,47 @@ const Home = () => {
               </form>
             </div>
           </Reveal>
+        </div>
+      </section>
+
+      {/* 7. FAQ SECTION (Interactive 2-Column Design) */}
+      <section className="faq-section section">
+        <div className="container faq-split">
+          
+          <div className="faq-left-content">
+            <Reveal animation="fade-right">
+              <h2 className="faq-bold-heading">Frequently<br/>Asked Questions</h2>
+              <p className="faq-subtext">Get answers to commonly asked questions about Chalo, our features, and how to make the most of our reliable mobility services.</p>
+            </Reveal>
+          </div>
+
+          <div className="faq-right-list">
+            <Reveal animation="fade-left">
+              <div className="faq-glass-container">
+                {faqs.map((faq, idx) => {
+                  const isActive = activeFaq === idx;
+                  return (
+                    <div 
+                      key={idx} 
+                      className={`faq-pill-item ${isActive ? 'active' : ''}`}
+                      onClick={() => setActiveFaq(isActive ? null : idx)}
+                    >
+                      <div className="faq-q-bar">
+                        <h4>{faq.q}</h4>
+                        <div className="faq-icon-wrapper">
+                          <div className="faq-icon-cross"></div>
+                        </div>
+                      </div>
+                      <div className="faq-a-panel">
+                        <p>{faq.a}</p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </Reveal>
+          </div>
+
         </div>
       </section>
     </div>
